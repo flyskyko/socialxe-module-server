@@ -39,7 +39,7 @@ class socialxeServerProviderFacebook extends socialxeServerProvider{
 		// URL 생성
 		try{
 			$loginUrl = $fb->getLoginUrl(array(
-				"scope" => "publish_stream,offline_access,email",
+				"scope" => "email",
 				"display" => $display,
 				"redirect_uri" => $this->callback
 			));
